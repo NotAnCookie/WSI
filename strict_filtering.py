@@ -13,10 +13,12 @@ def apply_strict_filtering(df, ulubiona_kuchnia, max_cena, max_odleglosc):
     return filtrowane
 
 def show_filtered_results(df):
+    df = df.sort_values(by='pagerank', ascending=True)
     if df.empty:
         print("\nBrak restauracji spełniających ścisłe kryteria.")
     else:
         print("\nRestauracje spełniające ścisłe kryteria:")
         for _, row in df.iterrows():
             print(f"- {row['nazwa']} | Kuchnia: {row['kuchnia']} | Cena: {row['cena']} zł | "
-                  f"Ocena: {row['ocena']} | Odległość: {row['odleglosc_km']} km")
+                  f"Ocena: {row['ocena']} | Odległość: {row['odleglosc_km']} km | PageRank: {row['pagerank']:.4f}")
+

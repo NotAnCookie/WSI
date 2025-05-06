@@ -6,4 +6,4 @@ Wnioski do final raport
 szczególnie dla różnorodnych danych
 4. aby dostać w miarę odpowiednią rekomendację dla użytkownika trzeba bardzo wysoko go postawić
 (jego połączenia w grafie będą miały najwyższe wartości)
-5. bardzo surowe podejście pozwala na lepszą propozycję ale jeżeli rzadna restauracja nie spełnia wymagań to pagerank wynosi 0 dla wszystkich 
+5. bardzo surowe podejście pozwala na lepszą propozycję ale jeżeli rzadna restauracja nie spełnia wymagań to pagerank zbliża się do 0 dla wszystkich 
